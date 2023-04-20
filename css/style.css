@@ -92,15 +92,43 @@ img {
 }
 
 .header-link {
+  position: relative;
+
   padding-top: 24px;
   padding-bottom: 24px;
+
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   color: var(--secondary-navy-blue);
   text-decoration: none;
-  font-weight: 500;
 }
+
+.header-link::after {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -1.5px;
+
+  border-radius: 2px;
+}
+.header-link.current {
+  color: var(--ocean);
+}
+
+.header-link.current::after,
+.header-link:hover::after,
+.header-link:focus::after {
+  background: var(--ocean);
+}
+
 .header-link:hover,
 .header-link:focus {
   color: var(--ocean);
