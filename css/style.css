@@ -111,7 +111,7 @@ img {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: ease-in;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link::after {
@@ -129,7 +129,7 @@ img {
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: ease-in;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link.current {
   color: var(--ocean);
@@ -169,7 +169,7 @@ img {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: ease-in;
+  transition-timing-function: ecubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover,
@@ -278,7 +278,7 @@ img {
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -405,7 +405,7 @@ img {
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: ease-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -442,7 +442,7 @@ img {
 
   transition-property: color, border-color;
   transition-duration: 250ms;
-  transition-timing-function: ease-in;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon {
   fill: currentColor;
@@ -547,7 +547,7 @@ img {
 
   transition-property: color, background-color, border, box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -564,7 +564,33 @@ img {
 
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: var(--primary-iris);
+}
+
+.overlay-text {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--light-background-cloud);
+  padding: 40px 32px;
 }
 
 .serv-item {
