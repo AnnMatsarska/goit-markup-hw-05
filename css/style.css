@@ -175,7 +175,6 @@ img {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--ocean);
-  text-decoration: underline;
 }
 
 .list {
@@ -186,10 +185,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-slate);
-}
-
-.list:hover {
-  color: var(--ocean);
 }
 
 .link {
@@ -280,12 +275,14 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
-.btn-size {
-}
+
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--background-white);
   background-color: var(--ocean);
 }
 
@@ -325,7 +322,7 @@ img {
   margin-bottom: 8px;
   padding: 24px 100px;
 
-  background: #f4f4fd;
+  background: var(--light-background-cloud);
   border-radius: 4px;
 }
 
@@ -340,7 +337,7 @@ img {
   gap: var(--indent);
 }
 .compet-item {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent-cornflower);
 }
 .compet-list {
   flex-basis: calc((100%-48px) / 3);
@@ -394,7 +391,7 @@ img {
   gap: var(--indent);
 }
 .socials-icon {
-  fill: #f4f4fd;
+  fill: var(--light-background-cloud);
 }
 .social-link {
   display: flex;
@@ -405,6 +402,10 @@ img {
 
   border-radius: 50%;
   background-color: var(--primary-iris);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
 }
 .social-link:hover,
 .social-link:focus {
@@ -438,6 +439,10 @@ img {
   border: 1px solid var(--subtle-text-light-slate);
   border-radius: 4px;
   color: #afb1b8;
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
 }
 .customer-icon {
   fill: currentColor;
@@ -539,6 +544,10 @@ img {
   cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+
+  transition-property: color, background-color, border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 
 .btn:hover,
@@ -551,8 +560,11 @@ img {
 }
 
 .serv-link {
-  text-decoration: none;
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 
 .serv-item {
