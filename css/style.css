@@ -569,20 +569,34 @@ img {
 
 .service-box {
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
   background: var(--primary-iris);
+
+  transform: translatey(100%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.serv-item:hover .overlay,
+.serv-item:focus {
+  transform: translate(0);
+
+} 
+
 .overlay-text {
+  padding: 40px 32px;
+
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
@@ -590,7 +604,7 @@ img {
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--light-background-cloud);
-  padding: 40px 32px;
+  
 }
 
 .serv-item {
