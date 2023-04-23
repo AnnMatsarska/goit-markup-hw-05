@@ -259,7 +259,7 @@ img {
 .hero-btn {
   display: block;
   min-width: 169px;
-  margin:auto; 
+  margin: auto;
   padding: 16px 32px;
 
   font-family: Roboto, sans-serif;
@@ -569,7 +569,7 @@ img {
 
 .service-box {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .overlay {
@@ -589,10 +589,9 @@ img {
 }
 
 .serv-item:hover .overlay,
-.serv-item:focus {
+.serv-item:focus .overlay {
   transform: translate(0);
-
-} 
+}
 
 .overlay-text {
   padding: 40px 32px;
@@ -604,7 +603,6 @@ img {
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--light-background-cloud);
-  
 }
 
 .serv-item {
@@ -647,7 +645,7 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -658,33 +656,35 @@ img {
   backdrop-filter: blur(5px);
 
   transition-property: opacity, visibility;
-  transition-duration:  250ms,  250ms;
-  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;  
+  visibility: hidden;
 }
 
 .modal {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-opacity: 1;
-width: 408px;
-height: 584px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  width: 408px;
+  height: 584px;
 
-background: var(--modal-background-dairy);
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+  background: var(--modal-background-dairy);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
-transition-property: transform;
-transition-duration: 400ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-delay: 250ms;
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .modal-btn {
@@ -696,17 +696,17 @@ transition-delay: 250ms;
 
   top: 24px;
   right: 24px;
-padding: 8px;
+  padding: 8px;
 
   border-radius: 50%;
   background: var(--accent-cornflower);
-border: 1px solid rgba(0, 0, 0, 0.1);
-color: var(--secondary-navy-blue);
-cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--secondary-navy-blue);
+  cursor: pointer;
 
-transition-property: background, color;
-transition-duration: 400ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background, color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
