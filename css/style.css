@@ -588,11 +588,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.serv-item:hover .overlay,
-.serv-item:focus .overlay {
-  transform: translate(0);
-}
-
 .overlay-text {
   padding: 40px 32px;
 
@@ -609,10 +604,11 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.serv-link:hover,
-.serv-link:focus {
+.serv-link:hover .overlay,
+.serv-link:focus .overlay {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translate(0);
 }
 .serv-text {
   text-align: left;
